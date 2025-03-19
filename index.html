@@ -6,101 +6,135 @@
   <title>Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      display: flex;
+      height: 100vh;
     }
 
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
+    /* Left Section */
+    .left-section {
+      width: 33%;
+      background-color: #0073e6;
+      color: white;
       padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
-    h1 {
-      color: #0073e6;
+    .left-section h1 {
       font-size: 2rem;
       margin-bottom: 10px;
     }
 
-    .links a {
-      margin-right: 15px;
+    .left-section p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .left-section .links a {
+      display: block;
+      margin: 10px 0;
       text-decoration: none;
-      color: #0073e6;
+      color: white;
       font-weight: bold;
+      background: #005bb5;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-align: center;
     }
 
-    .links a:hover {
-      text-decoration: underline;
+    .left-section .links a:hover {
+      background: #003f7f;
     }
 
-    .section-title {
-      font-size: 1.5rem;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: #333;
+    /* Right Section */
+    .right-section {
+      width: 67%;
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
     .project {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
     }
 
-    .project a {
+    .project img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .project-details {
+      flex: 1;
+    }
+
+    .project-details h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #0073e6;
+    }
+
+    .project-details p {
+      margin: 0 0 10px;
+    }
+
+    .project-details a {
       color: #0073e6;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .project a:hover {
+    .project-details a:hover {
       text-decoration: underline;
-    }
-
-    .code-snippet {
-      background: #f4f4f4;
-      padding: 10px;
-      border-left: 4px solid #0073e6;
-      font-family: monospace;
-      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <!-- Left Section -->
+  <div class="left-section">
     <h1>Chris Tran</h1>
+    <p>"Pursuing excellence in data science and machine learning."</p>
     <div class="links">
       <a href="#">Resume</a>
       <a href="#">LinkedIn</a>
       <a href="#">GitHub</a>
     </div>
-    <p>
-      I am pursuing an MS degree in Business Analytics at Simon Business School, University of Rochester.
-    </p>
-    <p>
-      I am currently a Machine Learning Research Intern at Skim AI Technologies with a focus on NLP and Deep Learning research.
-    </p>
+  </div>
 
-    <h2 class="section-title">Portfolio</h2>
-    <h3>Natural Language Processing</h3>
-    <p>
-      My complete implementation of assignments and projects in <strong>CS224n: Natural Language Processing with Deep Learning</strong> by Stanford (Winter, 2019).
-    </p>
+  <!-- Right Section -->
+  <div class="right-section">
     <div class="project">
-      <h4>Neural Machine Translation</h4>
-      <p>
-        An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence. 
-        <a href="#">GitHub</a>
-      </p>
+      <img src="https://placehold.co/150x100" alt="Project Image">
+      <div class="project-details">
+        <h3>Neural Machine Translation</h3>
+        <p>An NMT system that translates texts from Spanish to English using a Bidirectional LSTM encoder and a Unidirectional LSTM decoder with attention.</p>
+        <a href="#">View on GitHub</a>
+      </div>
     </div>
+
     <div class="project">
-      <h4>Dependency Parsing</h4>
-      <p>
-        A Neural Transition-Based Dependency Parsing system with one-layer MLP. 
-        <a href="#">GitHub</a>
-      </p>
+      <img src="https://placehold.co/150x100" alt="Project Image">
+      <div class="project-details">
+        <h3>Dependency Parsing</h3>
+        <p>A Neural Transition-Based Dependency Parsing system with one-layer MLP.</p>
+        <a href="#">View on GitHub</a>
+      </div>
     </div>
-    <div clas
+
+    <!-- Add more projects as needed -->
+  </div>
+</body>
+</html>
