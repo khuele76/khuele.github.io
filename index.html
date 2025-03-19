@@ -1,47 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #0073e6;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0073e6;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .code-snippet {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #0073e6;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My GitHub Page</h1>
-        <p>This is my personal GitHub landing page.</p>
-        <p>
-            You can find my projects and repositories 
-            <a href="https://github.com/khuele76" target="_blank">here</a>.
-        </p>
+  <div class="container">
+    <h1>Chris Tran</h1>
+    <div class="links">
+      <a href="#">Resume</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
     </div>
-</body>
-</html>
+    <p>
+      I am pursuing an MS degree in Business Analytics at Simon Business School, University of Rochester.
+    </p>
+    <p>
+      I am currently a Machine Learning Research Intern at Skim AI Technologies with a focus on NLP and Deep Learning research.
+    </p>
+
+    <h2 class="section-title">Portfolio</h2>
+    <h3>Natural Language Processing</h3>
+    <p>
+      My complete implementation of assignments and projects in <strong>CS224n: Natural Language Processing with Deep Learning</strong> by Stanford (Winter, 2019).
+    </p>
+    <div class="project">
+      <h4>Neural Machine Translation</h4>
+      <p>
+        An NMT system which translates texts from Spanish to English using a Bidirectional LSTM encoder for the source sentence and a Unidirectional LSTM Decoder with multiplicative attention for the target sentence. 
+        <a href="#">GitHub</a>
+      </p>
+    </div>
+    <div class="project">
+      <h4>Dependency Parsing</h4>
+      <p>
+        A Neural Transition-Based Dependency Parsing system with one-layer MLP. 
+        <a href="#">GitHub</a>
+      </p>
+    </div>
+    <div clas
